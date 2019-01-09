@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>LEDs talk about LEDs</title>
+<meta name="author" content="(Jos van Bakel)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js-3.7.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js-3.7.0/css/theme/black.css" id="theme"/>
+
+<link rel="stylesheet" href="custom.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js-3.7.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./images/title-screen.jpg"><h1 class="title">LEDs talk about LEDs</h1><h2 class="author">Jos van Bakel</h2><p class="date">Created: 2019-01-09 Wed 20:48</p>
+</section>
+
+<section>
+<section id="slide-org52557db">
+<h2 id="org52557db">About me</h2>
+<ul>
+<li class="fragment appear">NERD</li>
+<li class="fragment appear">Software developer at Spindle</li>
+<li class="fragment appear">Currently working on PWA SIP phone</li>
+<li class="fragment appear">Electronics hobbyist</li>
+<li class="fragment appear">Love LEDs</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org676d1e5">
+<h2 id="org676d1e5">&lt;3 LEDs</h2>
+<div class="outline-text-2" id="text-org676d1e5">
+</div>
+</section>
+<section id="slide-org7bd2d97">
+<h3 id="org7bd2d97">Action Reaction v1</h3>
+
+<div class="figure">
+<p><img src="./images/arv1_1.jpg" alt="arv1_1.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org11cca2e">
+<h3 id="org11cca2e">Action Reaction v1</h3>
+
+<div class="figure">
+<p><img src="./images/arv1_2.jpg" alt="arv1_2.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6aebb5a">
+<h3 id="org6aebb5a">Action Reaction v1</h3>
+
+<div class="figure">
+<p><img src="./images/arv1_3.jpg" alt="arv1_3.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org5292403">
+<h3 id="org5292403">Action Reaction v2</h3>
+
+<div class="figure">
+<p><img src="./images/arv2_1.jpg" alt="arv2_1.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgf944c49">
+<h3 id="orgf944c49">Action Reaction v2</h3>
+
+<div class="figure">
+<p><img src="./images/arv2_2.jpg" alt="arv2_2.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org96343cd">
+<h3 id="org96343cd">Barrelchallenge</h3>
+
+<div class="figure">
+<p><img src="./images/barrel_leds_1.jpg" alt="barrel_leds_1.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org296f472">
+<h3 id="org296f472">Barrelchallenge</h3>
+
+<div class="figure">
+<p><img src="./images/barrel_leds_2.jpg" alt="barrel_leds_2.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6431e04">
+<h3 id="org6431e04">LED table</h3>
+
+<div class="figure">
+<p><img src="./images/led_table_2.jpg" alt="led_table_2.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgf14e7dd">
+<h3 id="orgf14e7dd">LED table</h3>
+
+<div class="figure">
+<p><img src="./images/led_table_1.jpg" alt="led_table_1.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org46c02f0">
+<h3 id="org46c02f0">LED table</h3>
+
+<div class="figure">
+<p><img src="./images/led_table_3.jpg" alt="led_table_3.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge76bddb">
+<h3 id="orge76bddb">Dogs</h3>
+
+<div class="figure">
+<p><img src="./images/sudo.jpg" alt="sudo.jpg" width="75%" height="75%" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+Demo time!
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org5ec6ca7">
+<h2 id="org5ec6ca7">NeoPixels</h2>
+<p>
+A.K.A. WS2812, WS2811 or SK6812
+</p>
+
+
+<div class="figure">
+<p><img src="./images/neopixels.jpg" alt="neopixels.jpg" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+“NeoPixel” is Adafruit's brand for individually-addressable RGB color
+pixels and strips based on the WS2812, WS2811 and SK6812 LED/drivers,
+using a single-wire control protocol.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgfbd0dc3">
+<h3 id="orgfbd0dc3">What is it</h3>
+<ul>
+<li class="fragment appear">Driving lots of RGB leds used to be "hard"</li>
+<li class="fragment appear">.. not anymore with the WS2812 LED (NeoPixel)</li>
+<li class="fragment appear">RGB LED with integrated IC</li>
+<li class="fragment appear">Single wire protocol</li>
+<li class="fragment appear"><b>Individually addressable</b></li>
+<li class="fragment appear">Cheap (~30$ for strip of 300)</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+hard =&gt; required lots of external components, making it hard to make
+big strips or displays.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org6c95ee8">
+<h3 id="org6c95ee8">What is it?</h3>
+
+<div class="figure">
+<p><img src="./images/ws2812-led.png" alt="ws2812-led.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org29c7e67">
+<h3 id="org29c7e67">How to drive it?</h3>
+
+<div class="figure">
+<p><img src="./images/ws2812_protocol.png" alt="ws2812_protocol.png" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+Feed it a bit signal with RGB values for each LED in the strip.
+</p>
+
+<p>
+And 5V from a power source (for longer strips).
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org222d93b">
+<h3 id="org222d93b">How to drive it?</h3>
+<p>
+With a (micro)controller:
+</p>
+
+<ul>
+<li>Arduino</li>
+<li>ESP8266/ESP32</li>
+<li>Raspberry Pi</li>
+<li>lots of other MCU's</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Arduino
+ESP8266 (explain why this chip is awesome)
+  ==&gt; fast (160mhz)
+  ==&gt; WiFi
+  ==&gt; cheap (~2$ per chip or 5$ look for NodeMCU).
+  ==&gt; Arduino supported (can use whole ecosystem!)
+  ==&gt; MicroPython
+  ==&gt; Javascript (MongooseOS or Espruino)
+ESP32
+  ==&gt; successor to the ESP8266
+  ==&gt; dual core
+  ==&gt; has bluetooth
+  ==&gt; faster?
+  ==&gt; more flash?
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org421dee4">
+<h2 id="org421dee4">Javascript?</h2>
+<aside class="notes">
+<p>
+But we are here at a javascript meetup,
+so i had to somehow bend this talk towards javascript :)
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org316da31">
+<h3 id="org316da31">MongooseOS</h3>
+<p>
+Embedded "OS" for ESP8266 and ESP322 (and more).
+</p>
+
+</section>
+<section id="slide-org1935460">
+<h3 id="org1935460">ESP8266</h3>
+<ul>
+<li>Dirt cheap (2-5$)</li>
+<li>WiFi</li>
+<li>80/160MHz</li>
+<li>up to 16M flash</li>
+
+</ul>
+
+</section>
+<section id="slide-org72daab6">
+<h3 id="org72daab6">and runs Javascript!</h3>
+<p>
+mJS implements a strict subset of ES6:
+</p>
+
+<ul>
+<li>Any valid mJS code is a valid ES6 code.</li>
+<li>Any valid ES6 code is not necessarily a valid mJS code.</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+mJS (MongooseOS JavaScript)
+<a href="https://github.com/cesanta/mjs">https://github.com/cesanta/mjs</a>
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org11a9f6d">
+<h3 id="org11a9f6d">Demo!</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd14c3e9">
+<h2 id="orgd14c3e9">Questions?</h2>
+<div class="outline-text-2" id="text-orgd14c3e9">
+</div>
+</section>
+<section id="slide-org433f500">
+<h3 id="org433f500">Sources</h3>
+<p>
+<a href="https://www.instructables.com/id/LED-Throwies/">https://www.instructables.com/id/LED-Throwies/</a>
+<img src="https://mcuoneclipse.files.wordpress.com/2014/07/ws2812-led-with-red-green-and-blue.png" alt="ws2812-led-with-red-green-and-blue.png" />
+<a href="https://cdn-learn.adafruit.com/guides/cropped_images/000/000/350/medium640/glamour.jpg?1515089818">https://cdn-learn.adafruit.com/guides/cropped_images/000/000/350/medium640/glamour.jpg?1515089818</a>
+<img src="https://cpldcpu.files.wordpress.com/2014/01/ws2812_protocol.png" alt="ws2812_protocol.png" />
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js-3.7.0/lib/js/head.min.js"></script>
+<script src="./reveal.js-3.7.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js-3.7.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js-3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js-3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js-3.7.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js-3.7.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
